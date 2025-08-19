@@ -23,4 +23,8 @@ public class TaskService {
             }
         }
     }
+
+    public void deleteTask(int id) {
+        tasks.removeIf(task -> task.getId() == id);
+    }
 }
